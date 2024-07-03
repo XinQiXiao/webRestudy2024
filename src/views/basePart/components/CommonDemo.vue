@@ -35,6 +35,24 @@ function deepCloneClick(obj) {
   return result
 }
 
+setTimeout(()=>{
+  console.log('111')
+}, 1)
+setTimeout(()=>{
+  console.log('444')
+}, 4)
+setTimeout(()=>{
+  console.log('000')
+}, 0)
+console.log('out')
+setTimeout(()=>{
+  console.log('222')
+}, 2)
+setTimeout(()=>{
+  console.log('333')
+}, 3)
+console.log('out1')
+
 </script>
 
 <style lang="scss" scoped>

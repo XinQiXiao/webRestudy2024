@@ -8,6 +8,7 @@ import BaseCssPage from '@/views/basePart/BaseCssPage.vue'
 
 import MobileH5Page from '@/views/mobilePart/H5Page.vue'
 import Vue3Page from '@/views/vuePart/Vue3Page.vue'
+import Vue2Page from '@/views/vuePart/Vue2Page.vue'
 import OpenlayersPage from '@/views/gisPart/OpenlayersPage.vue'
 
 const router = createRouter({
@@ -51,6 +52,12 @@ const router = createRouter({
           name: 'vueThree',
           meta: { title: 'VueThree' },
           component: Vue3Page,
+        },
+        {
+          path: '/vue/two',
+          name: 'vueTwo',
+          meta: { title: 'VueTwo' },
+          component: Vue2Page,
         },
       ],
     },

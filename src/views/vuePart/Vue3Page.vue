@@ -1,11 +1,21 @@
 <template>
   <div class="vue-3-container">
-    {{strRef}}
+    {{pageData.name}}{{ pageData.age }}
+    <el-button @click="changeName">changeName</el-button>
+    <el-button @click="changeAge">changeAge</el-button>
   </div>
 </template>
 
 <script setup lang="ts">
-const strRef = ref('vue 3')
+const pageData = reactive({
+  name: 'name'
+})
+function changeName(){
+  pageData.name = 'zhangsan'
+}
+function changeAge(){
+  pageData.age = 10
+}
 </script>
 
 <style lang="scss" scoped>

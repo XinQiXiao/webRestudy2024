@@ -25,7 +25,7 @@ const homeOptions = [
           label: 'vue3', path: '/vue/three', index: '1',
         },
         {
-          label: 'vue2', path: '', index: '2',
+          label: 'vue2', path: '/vue/two', index: '2',
         },
         {
           label: 'vue-router', path: '', index: '3',
